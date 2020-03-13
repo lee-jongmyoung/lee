@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.food">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@mipmap/ic_launcher_new"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_new_round"
+        android:supportsRtl="true"
+        android:theme="@style/ActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Help"></activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.project.food"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <activity android:name=".MemberScreen" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA6J7gKo6s2vX8s7Wnrjkn0BpzTQcwaRZw" />
+
+        <activity android:name=".MemberVendor" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Intro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TagEnrollment" />
+        <activity android:name=".Login" />
+        <activity android:name=".Member" />
+        <activity android:name=".StoreTab" />
+        <activity android:name=".StoreReview" />
+        <activity android:name=".StoreStamp" />
+        <activity android:name=".ReviewWrite" />
+        <activity android:name=".VendorPage" />
+        <activity android:name=".ImageRegist" />
+        <activity android:name=".MainSearch" />
+        <activity android:name=".StorePrint" />
+        <activity android:name=".LatestStore" />
+        <activity android:name=".StampUse" />
+        <activity android:name=".SearchResult" />
+        <activity android:name=".DeleteActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".TimeRegist" />
+        <activity android:name=".MemoRegist" />
+        <activity android:name=".StampView" />
+        <activity android:name=".SearchMap" />
+        <activity android:name=".MapSearchResult" />
+    </application>
+
+</manifest>

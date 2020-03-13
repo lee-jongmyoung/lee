@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">길거리음식 어디있어?</string>
+
+    <string-array name="spinner01">
+        <item>평점순</item>
+        <item>즐겨찾기순</item>
+    </string-array>
+
+    <string-array name="spinner_nav">
+        <item>평점순</item>
+        <item>즐겨찾기순</item>
+        <item>메뉴별</item>
+
+    </string-array>
+
+    <string-array name="spinner02">
+        <item>필터off</item>
+        <item>1km</item>
+        <item>3km</item>
+        <item>5km</item>
+        <item>10km</item>
+    </string-array>
+
+    <string-array name="spinner03">
+        <item>전체</item>
+        <item>메뉴</item>
+        <item>점포</item>
+        <item>지역</item>
+    </string-array>
+
+    <string-array name="recordsp">
+        <item>스탬프 현황</item>
+        <item>최근 본 점포</item>
+    </string-array>
+
+    <string-array name="grade">
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="permission_1">[설정] > [권한] 에서 권한을 허용할 수 있습니다.</string>
+    <string name="permission_2">사진 및 파일을 저장하기 위하여 접근 권한이 필요합니다.</string>
+
+    <string name="version">1.0</string>
+    <string name="no_data">데이터가 없습니다.</string>
+
+</resources>

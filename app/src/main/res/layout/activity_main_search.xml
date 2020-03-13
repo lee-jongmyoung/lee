@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainSearch">
+
+    <Button
+        android:id="@+id/hash11"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bbang"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search11" />
+
+    <Button
+        android:id="@+id/hash22"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/chicken"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/hash11"
+        app:layout_constraintTop_toBottomOf="@+id/search11" />
+
+    <Button
+        android:id="@+id/hash33"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ohoh"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/hash22"
+        app:layout_constraintTop_toBottomOf="@+id/search11" />
+
+    <Button
+        android:id="@+id/hash44"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/egg"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hash11" />
+
+    <Button
+        android:id="@+id/hash55"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/taco"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/hash44"
+        app:layout_constraintTop_toBottomOf="@+id/hash22" />
+
+    <Button
+        android:id="@+id/hash66"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/dddd"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/hash55"
+        app:layout_constraintTop_toBottomOf="@+id/hash33" />
+
+    <Button
+        android:id="@+id/hash77"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/hoho"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hash44" />
+
+    <Button
+        android:id="@+id/hash88"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/hot"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/hash77"
+        app:layout_constraintTop_toBottomOf="@+id/hash55" />
+
+    <Button
+        android:id="@+id/hash99"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/tost"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/hash88"
+        app:layout_constraintTop_toBottomOf="@+id/hash66" />
+
+    <Button
+    android:id="@+id/hash1010"
+    android:layout_width="90dp"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="24dp"
+    android:background="@drawable/tang"
+    android:text=""
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/hash77" />
+
+    <Button
+        android:id="@+id/hash1111"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/wawa"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/hash1212"
+        app:layout_constraintTop_toBottomOf="@+id/hash99" />
+
+    <Button
+        android:id="@+id/hash1212"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/dak"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/hash1010"
+        app:layout_constraintTop_toBottomOf="@+id/hash88" />
+
+    <SearchView
+        android:id="@+id/search11"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

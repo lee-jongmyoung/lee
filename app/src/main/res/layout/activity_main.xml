@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <TabHost
+        android:id="@+id/tabhost1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="40dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <com.project.food.LoopViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="500dp"
+                        android:layout_height="148dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp">
+
+                    </com.project.food.LoopViewPager>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignTop="@+id/spinner0101"
+                        android:layout_marginTop="-4dp"
+                        android:background="#BDBDBD" />
+
+                    <View
+                        android:id="@+id/view02"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignBottom="@+id/spinner0101"
+                        android:layout_marginBottom="-7dp"
+                        android:background="#BDBDBD" />
+
+                    <Spinner
+                        android:id="@+id/spinner0101"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="168dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner0202"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="168dp" />
+
+
+                    <GridView
+                        android:id="@+id/gridview"
+                        android:layout_width="393dp"
+                        android:layout_height="437dp"
+                        android:layout_alignTop="@+id/view02"
+                        android:layout_marginTop="14dp"
+                        android:gravity="center"
+                        android:numColumns="2"
+                        android:stretchMode="columnWidth"></GridView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Spinner
+                            android:id="@+id/spinner_nav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/spinner01"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/isworking"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/timestate"
+                            app:layout_constraintBottom_toTopOf="@+id/mapview"
+                            app:layout_constraintEnd_toStartOf="@+id/searchbtn"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <Button
+                            android:id="@+id/searchbtn"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/find1"
+                            android:text=""
+                            app:layout_constraintBottom_toTopOf="@+id/mapview"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!--</android.support.constraint.ConstraintLayout>-->
+
+                        <!--<FrameLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent">-->
+
+                        <!--<com.google.android.gms.maps.MapView-->
+                        <!--android:id="@+id/mapview"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent" />-->
+
+                        <fragment
+                            android:id="@+id/mapview"
+                            class="com.google.android.gms.maps.MapFragment"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="70dp"
+                            android:layout_marginBottom="60dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/guideline2"
+                            app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+                        <Button
+                            android:id="@+id/SetMyLocationBtn"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/ic_action_gps_fixed"
+                            android:text=""
+                            app:layout_constraintBottom_toBottomOf="@+id/mapview"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <android.support.constraint.Guideline
+                            android:id="@+id/guideline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent=".00" />
+
+                        <android.support.constraint.Guideline
+                            android:id="@+id/guideline2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="1.00" />
+
+                        <Button
+                            android:id="@+id/help"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="15dp"
+                            android:text=""
+                            android:background="@drawable/ic_action_help"
+                            app:layout_constraintTop_toBottomOf="@+id/searchbtn"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                    </android.support.constraint.ConstraintLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView88"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/ic_action_supervised_user_circle"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_weight="2"
+                            android:text="이름"
+                            android:textSize="18dp"
+                            app:layout_constraintStart_toEndOf="@+id/imageView88"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/Nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_weight="3"
+                            android:text="닉네임"
+                            app:layout_constraintStart_toEndOf="@+id/Name"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="16dp"
+                            android:background="#000000"
+                            app:layout_constraintTop_toBottomOf="@+id/image2"
+                            tools:layout_editor_absoluteX="0dp" />
+
+
+                        <TextView
+                            android:id="@+id/memberinfo"
+                            android:layout_width="70dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="12dp"
+                            android:text="회원정보"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+                        <TextView
+                            android:id="@+id/membersecede"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="20dp"
+                            android:text="회원탈퇴"
+                            app:layout_constraintStart_toEndOf="@+id/image1"
+                            app:layout_constraintTop_toBottomOf="@+id/memberinfo" />
+
+                        <View
+                            android:id="@+id/view6"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="16dp"
+                            android:background="#000000"
+                            app:layout_constraintTop_toBottomOf="@+id/image1"
+                            tools:layout_editor_absoluteX="0dp" />
+
+                        <TextView
+                            android:id="@+id/StampStatus"
+                            android:layout_width="100dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="24dp"
+                            android:text="스탬프 현황"
+                            app:layout_constraintStart_toEndOf="@+id/image3"
+                            app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+                        <TextView
+                            android:id="@+id/CurrentTruck"
+                            android:layout_width="100dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="24dp"
+                            android:text="최근 본 점포"
+                            app:layout_constraintStart_toEndOf="@+id/image2"
+                            app:layout_constraintTop_toBottomOf="@+id/StampStatus" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="8dp"
+                            android:background="#000000"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView88"
+                            tools:layout_editor_absoluteX="16dp"
+                            />
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/jidText1"-->
+                            <!--android:layout_width="100dp"-->
+                            <!--android:layout_height="25dp"-->
+                            <!--android:layout_marginStart="8dp"-->
+                            <!--android:layout_marginTop="240dp"/>-->
+
+                        <Button
+                            android:id="@+id/merchant1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="60dp"
+                            android:background="@drawable/user1"
+                            android:text=""
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+
+
+                        <ImageView
+                            android:id="@+id/image1"
+                            android:layout_width="36dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            app:layout_constraintEnd_toStartOf="@+id/membersecede"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/memberinfo"
+                            app:srcCompat="@drawable/ic_action_meeting_room" />
+
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="36dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/image3"
+                            app:srcCompat="@drawable/ic_action_content_paste" />
+
+                        <ImageView
+                            android:id="@+id/image3"
+                            android:layout_width="36dp"
+                            android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view6"
+                            app:srcCompat="@drawable/ic_action_content_paste" />
+
+                        <ImageView
+                            android:id="@+id/image1111"
+                            android:layout_width="36dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view"
+                            app:srcCompat="@drawable/ic_action_local_shipping" />
+
+                        <TextView
+                            android:id="@+id/vendorregist"
+                            android:layout_width="100dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="24dp"
+                            android:text="업체 등록"
+                            app:layout_constraintStart_toEndOf="@+id/image1111"
+                            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+                    </android.support.constraint.ConstraintLayout>
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </RelativeLayout>
+    </TabHost>
+</LinearLayout>

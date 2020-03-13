@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/jname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="붕어빵 나라"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jname"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:padding="5dp"
+        android:text="서울 송파구 송파대로 82"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="134dp"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/ic_action_grade" />
+
+    <TextView
+        android:id="@+id/jgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/jname"
+        android:text="5.0" />
+
+</RelativeLayout>

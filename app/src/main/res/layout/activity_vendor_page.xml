@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VendorPage">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_action_supervised_user_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="2"
+        android:text="이름"
+        android:textSize="18dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/Nickname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="3"
+        android:text="닉네임"
+        app:layout_constraintStart_toEndOf="@+id/Name2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#000000"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/image9"
+        tools:layout_editor_absoluteX="-28dp" />
+
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/nickname" />-->
+
+
+        <Button
+            android:id="@+id/salesstart"
+            android:layout_width="205dp"
+            android:layout_height="167dp"
+            android:layout_weight="5"
+            android:background="@drawable/open"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/view4" />-->
+
+        <Button
+            android:id="@+id/salesfinish"
+            android:layout_width="205dp"
+            android:layout_height="167dp"
+            android:layout_weight="5"
+            android:background="@drawable/close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/view4" />-->
+
+
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/nickname" />-->
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="#000000"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13"
+            tools:layout_editor_absoluteX="45dp" />
+
+        <TextView
+            android:id="@+id/imageregist"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="26dp"
+            android:text="사진 등록"
+            app:layout_constraintStart_toEndOf="@+id/image6"
+            app:layout_constraintTop_toBottomOf="@+id/stampregist" />
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/menuregist" />-->
+
+        <TextView
+            android:id="@+id/menuregist"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:text="메뉴 등록"
+            app:layout_constraintStart_toEndOf="@+id/image8"
+            app:layout_constraintTop_toBottomOf="@+id/imageregist" />
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/view5" />-->
+
+        <TextView
+            android:id="@+id/memoregist"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="26dp"
+            android:text="메모 등록"
+            app:layout_constraintStart_toEndOf="@+id/image6"
+            app:layout_constraintTop_toBottomOf="@+id/menuregist" />
+
+        <TextView
+            android:id="@+id/timeregist"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="26dp"
+            android:text="영업시간 등록"
+            app:layout_constraintStart_toEndOf="@+id/image9"
+            app:layout_constraintTop_toBottomOf="@+id/memoregist" />
+
+
+        <TextView
+            android:id="@+id/stampregist"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="스탬프"
+            app:layout_constraintStart_toEndOf="@+id/image5"
+            app:layout_constraintTop_toBottomOf="@+id/view7" />
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/imageregist" />-->
+
+        <Switch
+            android:id="@+id/stampswitch"
+            android:layout_width="62dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track_selector"
+            app:layout_constraintStart_toEndOf="@+id/stampregist"
+            app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:background="#000000"
+            app:layout_constraintTop_toBottomOf="@+id/salesstart"
+            tools:layout_editor_absoluteX="78dp" />
+
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view7"
+            app:srcCompat="@drawable/ic_action_grade_black" />
+
+        <ImageView
+            android:id="@+id/image6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image8"
+            app:srcCompat="@drawable/ic_action_bookmark_border" />
+
+        <ImageView
+            android:id="@+id/image7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image5"
+            app:srcCompat="@drawable/ic_action_crop_original" />
+
+        <ImageView
+            android:id="@+id/image8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image7"
+            app:srcCompat="@drawable/ic_action_content_paste" />
+
+        <ImageView
+            android:id="@+id/image9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image6"
+            app:srcCompat="@drawable/ic_action_access_time" />
+
+        <ImageView
+            android:id="@+id/image93"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view5"
+            app:srcCompat="@drawable/ic_action_delete_forever" />
+
+    <TextView
+        android:id="@+id/storedelete"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="22dp"
+        android:text="업체 삭제"
+        app:layout_constraintStart_toEndOf="@+id/image93"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+
+</android.support.constraint.ConstraintLayout>
